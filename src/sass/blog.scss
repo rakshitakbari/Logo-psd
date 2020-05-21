@@ -1,0 +1,36 @@
+#blog{
+    &.bg-grey {
+        background-color: #FAFAFA;
+        border-top: 1px solid #EEE;
+        border-bottom: 1px solid #EEE;
+    }
+    .blog{
+        background-color: #FFF;
+        margin: 15px 0px;
+        .blog-content {
+            padding: 20px 20px 40px;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        h3{
+            font-size: 21px;
+            font-weight: 700;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: $black;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.6;
+            color: #868F9B;
+            margin: 0 0 10px;
+        }
+        a{
+            color: $theme-color;
+            font-weight: 600;
+        }
+    }
+}

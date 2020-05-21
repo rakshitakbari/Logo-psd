@@ -1,0 +1,50 @@
+#numbers{
+    position: relative;
+    &.sm-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .bg-img {
+        background-image: url(../images/background2.jpg);    
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: .8;
+            background: $black;
+        }
+    }
+    .number{
+        text-align: center;
+        margin: 15px 0px;
+        i {
+            color: $theme-color;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: $white;
+            font-weight: 700;
+        }
+        .counter{
+            font-size: 32px;
+        }
+        span{
+            font-size: 16px;
+            color: $white;
+        }
+    }
+}

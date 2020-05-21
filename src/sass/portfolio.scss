@@ -1,0 +1,113 @@
+#portfolio {
+    &.bg-grey {
+        background-color: #FAFAFA;
+        border-top: 1px solid #EEE;
+        border-bottom: 1px solid #EEE;
+    }
+  .work {
+    position: relative;
+    padding: 20px;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      .overlay {
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        opacity: 0.8;
+      }
+      .work-content {
+        span {
+          -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+          transform: translateY(0%);
+          opacity: 1;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+        }
+        h3 {
+          -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+          transform: translateY(0%);
+          opacity: 1;
+          -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+        }
+      }
+      .work-link {
+        -webkit-transition-delay: 0.2s !important;
+        transition-delay: 0.2s !important;
+        opacity: 1 !important;
+      }
+    }
+    .overlay {
+      background: $black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      opacity: 0;
+      -webkit-transition: 0.2s opacity;
+      transition: 0.2s opacity;
+      -webkit-transition-delay: 0.2s;
+      transition-delay: 0.2s;
+    }
+    .work-content {
+      position: absolute;
+      left: 25px;
+      right: 25px;
+      top: 50%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      span {
+        display: block;
+        text-transform: uppercase;
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+        color: #6195ff;
+        margin-bottom: 5px;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+        font-weight: 600;
+      }
+      h3 {
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+        color: #fff;
+        margin-bottom: 10px;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+        font-size: 21px;
+        font-weight: 700;
+        margin-top: 0px;
+      }
+      .work-link {
+        text-align: center;
+        margin-top: 20px;
+        opacity: 0;
+        -webkit-transition: 0.2s opacity;
+        transition: 0.2s opacity;
+        a {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          background-color: $theme-color;
+          color: $white;
+          line-height: 50px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

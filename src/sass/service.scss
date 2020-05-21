@@ -1,0 +1,43 @@
+#service{
+    .service {
+        position: relative;
+        padding: 40px 20px 40px 70px;
+        margin: 15px 0px;
+        border: 1px solid #EEE;
+        &:after {
+            content: "";
+            background-color: $black;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0%;
+            z-index: -1;
+            -webkit-transition: 0.2s width;
+            transition: 0.2s width;
+        }
+        i {
+            position: absolute;
+            left: 20px;
+            text-align: center;
+            font-size: 32px;
+            color: $theme-color;
+            border-radius: 50%;
+        }
+        h3 {
+            -webkit-transition: 0.2s color;
+            transition: 0.2s color;
+            font-weight: 700;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: #10161A;
+            font-size: 21px;
+        
+        p{
+            margin: 0 0 10px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #868F9B;
+        }}
+    }
+}
